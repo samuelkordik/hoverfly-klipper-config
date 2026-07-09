@@ -1,0 +1,24 @@
+# Public repo: DEFAULT-DENY. Ignore everything, then explicitly allow only the
+# hand-authored config files. This way a stray secret, a Klipper SAVE_CONFIG
+# backup, a third-party symlinked file, or any new/unknown file can NEVER be
+# pushed by the automated backup.
+*
+
+# --- allow the meta files ---
+!.gitignore
+!README.md
+!LICENSE
+
+# --- allow the authored Klipper / Moonraker / peripheral configs ---
+!printer.cfg
+!moonraker.conf
+!crowsnest.conf
+!timelapse.cfg
+
+# Explicitly-excluded-by-design (already covered by the '*' default-deny, listed
+# here as documentation of WHY they must never be tracked):
+#   moonraker-obico.cfg        -> contains a private auth_token (SECRET)
+#   printer-*.cfg              -> Klipper SAVE_CONFIG auto-backups
+#   mainsail.cfg               -> third-party symlink (regenerated on install)
+#   moonraker_obico_macros.cfg -> third-party symlink
+#   *.backup / .*.bkp          -> editor/moonraker backups
