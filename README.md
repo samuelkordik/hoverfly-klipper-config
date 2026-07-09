@@ -37,3 +37,5 @@ of the default-deny ignore.
 ## License
 
 [GPLv3](./LICENSE).
+
+_Backup automation verified active: 2026-07-09_
