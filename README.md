@@ -15,7 +15,9 @@ files can never be pushed by the automated backup.
 
 | File | What it is |
 | --- | --- |
-| `printer.cfg` | Klipper config — calibrated PID, `rotation_distance`, bed mesh, macros |
+| `printer.cfg` | Klipper config |
+| `macros.cfg` | Klipper macros |
+| `resonance.cfg` | Accelerometer and ShakeTune config; can be turned off if S2DW is disconnected. |
 | `moonraker.conf` | Moonraker API server config |
 | `crowsnest.conf` | Webcam (Logitech C615) config |
 | `timelapse.cfg` | moonraker-timelapse macros |
