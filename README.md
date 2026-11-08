@@ -1,7 +1,7 @@
 # Hoverfly — Klipper / Moonraker config
 
 Live configuration for **Hoverfly**, a heavily-modified Creality Ender 3 Pro
-running Klipper on `delicass` (a ThinkPad P52s). Companion to the main build
+running Klipper on `terminus` (a ThinkPad P52s). Companion to the main build
 log at <https://github.com/samuelkordik/Hoverfly>.
 
 Hardware: SKR Mini E3 V2.0, Sprite Extruder Pro (direct drive), CRTouch probe,
